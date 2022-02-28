@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordle Generator</title>
+</head>
+<body>
+  <main role="main">
+    <h1>WordleGenerator</h1>
+    <p>Generate a finished wordle board!</p>
+    <article class="settings">
+      <h2>Settings</h2>
+      <div class="setting">
+        <label for="daySetting">Day</label>
+        <input type="date" name="Wordle day" id="daySetting" autocomplete="off">
+      </div>
+      <div class="setting">
+        <form oninput="tries.value=parseInt(trySetting.value)">
+          <label for="trySetting">Tries</label>
+          <input type="range" name="Wordle tries" min="1" max="6" value="3" id="trySetting" autocomplete="off">
+          <output name="tries" for="trySetting">3</output>
+        </form>
+      </div>
+      <div class="setting">
+        <label for="wordsHidden">Hide Words</label>
+        <input type="checkbox" name="Hide Words" id="wordsHidden" autocomplete="off">
+      </div>
+      <button>Generate Board</button>
+    </article>
+    <article id="wordleBoard">
+      <div id="wordleBoardGenerated"></div>
+    </article>
+    <pre id="wordleBoardText"></pre>
+  </main>
+  <footer></footer>
+</body>
+</html>
