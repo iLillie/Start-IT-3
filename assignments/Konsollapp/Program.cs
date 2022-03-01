@@ -3,7 +3,7 @@ namespace KonsollApp
 {
   class Program
   {
-    static int[] taskNumbers = { 1, 2, 3, 4 };
+    static int tasks = 6;
     static void Main(string[] args)
     {
 
@@ -24,12 +24,18 @@ namespace KonsollApp
         case "Task4":
           Task4.Run(args!);
           break;
+        case "Task5":
+          Task5.Run(args!);
+          break;
+        case "Task6":
+          Task6.Run(args!);
+          break;
         default:
           Console.WriteLine("No Tasks selected");
           Console.WriteLine("Select from these tasks:");
-          foreach (int taskNumber in taskNumbers)
+          for (int i = 1; i < tasks + 1; i++)
           {
-            Console.WriteLine($"Task{taskNumber}");
+            Console.WriteLine($"Task{i}");
           }
           break;
       }
