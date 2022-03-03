@@ -3,7 +3,7 @@ namespace KonsollApp
 {
   class Program
   {
-    static int tasks = 6;
+    static int tasks = 7;
     static void Main(string[] args)
     {
 
@@ -29,6 +29,9 @@ namespace KonsollApp
           break;
         case "Task6":
           Task6.Run(args!);
+          break;
+         case "Task7":
+          Task7.Run(args![1..]);
           break;
         default:
           Console.WriteLine("No Tasks selected");
