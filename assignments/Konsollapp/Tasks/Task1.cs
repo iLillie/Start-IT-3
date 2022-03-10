@@ -1,12 +1,11 @@
-namespace KonsollApp.Tasks
+namespace KonsollApp.Tasks;
+
+internal class Task1
 {
-  class Task1
+    public static void Run()
     {
-        public static void Run()
-        {
-            Console.WriteLine("Hei, Hva heter du?");
-            var firstName = Console.ReadLine();
-            Console.WriteLine("Velkommen " + firstName);
-        }
+        Console.WriteLine("Hei, Hva heter du?");
+        var firstName = Console.ReadLine();
+        Console.WriteLine("Velkommen " + firstName);
     }
 }

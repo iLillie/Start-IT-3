@@ -1,33 +1,31 @@
-namespace KonsollApp.Tasks
+namespace KonsollApp.Tasks;
+
+public static class Task6
 {
-  public class Task6
-  {
     public static void Run(string[] args)
     {
-      var range = 250;
-      var counts = new int[range];
-      string? text = "something";
-      int totalLetters = 0;
-      while (!string.IsNullOrWhiteSpace(text))
-      {
-        text = Console.ReadLine();
-        foreach (var character in text!.ToUpper() ?? string.Empty)
+        var range = 250;
+        var counts = new int[range];
+        var text = "something";
+        var totalLetters = 0;
+        while (!string.IsNullOrWhiteSpace(text))
         {
-          totalLetters++;
-          counts[(int)character]++;
+            text = Console.ReadLine();
+            foreach (var character in text!.ToUpper() ?? string.Empty)
+            {
+                totalLetters++;
+                counts[character]++;
+            }
+
+            for (var i = 0; i < range; i++)
+                if (counts[i] > 0)
+                {
+                    var character = (char) i;
+                    var percentage = 100 * (float) counts[i] / totalLetters;
+                    var output = character + " - " + percentage.ToString("F2") + "%";
+                    Console.CursorLeft = Console.BufferWidth - output.Length - 1;
+                    Console.WriteLine(output);
+                }
         }
-        for (var i = 0; i < range; i++)
-        {
-          if (counts[i] > 0)
-          {
-            var character = (char)i;
-            var percentage = 100 * (float)counts[i] / totalLetters;
-            string output = character + " - " + percentage.ToString("F2") + "%";
-            Console.CursorLeft = Console.BufferWidth - output.Length - 1;
-            Console.WriteLine(output);
-          }
-        }
-      }
     }
-  }
 }
