@@ -37,6 +37,9 @@ internal static class Program
             case "Task8":
                 Task8.Run();
                 break;
+            case "Task9":
+                Task9.Run(args![1..]);
+                break;
             default:
                 Console.WriteLine("No Tasks selected");
                 Console.WriteLine("Select a task: ");
