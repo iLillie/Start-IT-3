@@ -1,6 +1,6 @@
-namespace KonsollApp.Tasks;
+namespace KonsollApp.Exercise;
 
-public static class Task9
+public static class TextAnalysis
 {
     private static string[] _vowels = new[] {"a", "e", "i", "o", "u"}; 
     public static void Run(string[] args)

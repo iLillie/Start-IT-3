@@ -1,6 +1,6 @@
-namespace KonsollApp.Tasks;
+namespace KonsollApp.Exercise;
 
-public class Task5
+public static class ReturnExercise
 {
     public static void Run(string[] args)
     {

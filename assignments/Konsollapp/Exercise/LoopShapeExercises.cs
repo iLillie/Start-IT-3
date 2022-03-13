@@ -1,6 +1,6 @@
-namespace KonsollApp.Tasks;
+namespace KonsollApp.Exercise;
 
-internal static class Task8
+internal static class LoopShapeExercises
 {
     public static void Run()
     {

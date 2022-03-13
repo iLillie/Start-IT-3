@@ -1,6 +1,6 @@
-namespace KonsollApp.Tasks;
+namespace Konsollapp.Exercise;
 
-internal class Task3
+internal static class VerbatimStringExercise
 {
     public static void Run(string[] args)
     {

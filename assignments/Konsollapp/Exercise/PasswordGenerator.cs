@@ -1,6 +1,6 @@
-namespace KonsollApp.Tasks;
+namespace KonsollApp.Exercise;
 
-public class Task7
+public static class PasswordGenerator
 {
     // Password Generator
     // Args:

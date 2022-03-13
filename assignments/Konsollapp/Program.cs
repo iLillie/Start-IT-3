@@ -1,50 +1,65 @@
-﻿using KonsollApp.Tasks;
+﻿using Konsollapp.Exercise;
+using KonsollApp.Exercise;
 
 namespace KonsollApp;
 
 internal static class Program
 {
-    private static readonly int tasks = 8;
-
     private static void Main(string[]? args)
     {
-        var isArrayEmpty = args == null || args.Length == 0;
-        var arguments = isArrayEmpty ? new[] {""} : args;
-
-        switch (arguments![0])
+        Console.WriteLine("Moodle C# Oppgaver!");
+        TaskList();
+        Console.Write("Velg en oppgave: ");
+        int taskNum = int.Parse(Console.ReadLine()!);
+        Console.Clear();
+        switch (taskNum)
         {
-            case "Task1":
-                Task1.Run();
+            case 1:
+                InputExercise.Run();
                 break;
-            case "Task2":
-                Task2.Run(args!);
+            case 2:
+                ArgumentExercise.Run(args!);
                 break;
-            case "Task3":
-                Task3.Run(args!);
+            case 3:
+                VerbatimStringExercise.Run(args!);
                 break;
-            case "Task4":
-                Task4.Run(args!);
+            case 4:
+                LoopExercise.Run(args!);
                 break;
-            case "Task5":
-                Task5.Run(args!);
+            case 5:
+                ReturnExercise.Run(args!);
                 break;
-            case "Task6":
-                Task6.Run(args!);
+            case 6:
+                DebugExercise.Run(args!);
                 break;
-            case "Task7":
-                Task7.Run(args![1..]);
+            case 7:
+                PasswordGenerator.Run(args![1..]);
                 break;
-            case "Task8":
-                Task8.Run();
+            case 8:
+                LoopShapeExercises.Run();
                 break;
-            case "Task9":
-                Task9.Run(args![1..]);
+            case 9:
+                TextAnalysis.Run(args![1..]);
+                break;
+            case 10:
+                ArrrayExercises.Run();
                 break;
             default:
-                Console.WriteLine("No Tasks selected");
-                Console.WriteLine("Select a task: ");
-                for (var i = 1; i < tasks + 1; i++) Console.WriteLine($"Task{i}");
-                break;
+                Console.WriteLine("No valid task selected");
+                return;
+        }
+    }
+
+    private static void TaskList()
+    {
+        var taskNames = new[]
+        {
+            "Input Exercise", "Argument Exercise", "Verbatim String Exercise", "Loop Exercise", "Return Exercise", "Debug Exercise", "Password Generator",
+            "Loop Shape Exercises", "Text Analysis", "Arrray Exercises"
+        };
+        for (int i = 0; i < taskNames.Length; i++)
+        {
+            Console.WriteLine($"{i+1}: {taskNames[i]}"); 
         }
     }
 }
