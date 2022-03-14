@@ -5,6 +5,7 @@ namespace KonsollApp;
 
 internal static class Program
 {
+    // TODO: Update to use Reflection instead of switch
     private static void Main(string[]? args)
     {
         Console.WriteLine("Moodle C# Oppgaver!");
