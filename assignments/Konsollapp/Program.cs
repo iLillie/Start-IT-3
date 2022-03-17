@@ -48,6 +48,9 @@ internal static class Program
             case 11:
                 OOPExercises.Run();
                 break;
+            case 12:
+                PlayersExercise.Run();
+                break;
             default:
                 Console.WriteLine("No valid task selected");
                 return;
@@ -59,7 +62,7 @@ internal static class Program
         var taskNames = new[]
         {
             "Input Exercise", "Argument Exercise", "Verbatim String Exercise", "Loop Exercise", "Return Exercise", "Debug Exercise", "Password Generator",
-            "Loop Shape Exercises", "Text Analysis", "Arrray Exercises", "Text Printer Exercise"
+            "Loop Shape Exercises", "Text Analysis", "Arrray Exercises", "Text Printer Exercise", "Players Exercise"
         };
         for (int i = 0; i < taskNames.Length; i++)
         {
