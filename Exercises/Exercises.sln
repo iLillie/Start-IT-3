@@ -4,6 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrocodileGame", "CrocodileG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia", "SocialMedia\SocialMedia.csproj", "{4AEF4B9A-82AA-406F-9C11-0B04298C5CF7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WaterProject", "WaterProject", "{5B561858-56F0-460C-B066-A42D250F4DD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterTest", "WaterProject\WaterTest\WaterTest.csproj", "{3F0DDA5B-67AE-4EC3-A91B-8D8038782E95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaterProgram", "WaterProject\WaterProgram\WaterProgram.csproj", "{83FFE1B6-420A-409B-8E5D-DA02B54EF4DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{4AEF4B9A-82AA-406F-9C11-0B04298C5CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AEF4B9A-82AA-406F-9C11-0B04298C5CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AEF4B9A-82AA-406F-9C11-0B04298C5CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F0DDA5B-67AE-4EC3-A91B-8D8038782E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0DDA5B-67AE-4EC3-A91B-8D8038782E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0DDA5B-67AE-4EC3-A91B-8D8038782E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0DDA5B-67AE-4EC3-A91B-8D8038782E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83FFE1B6-420A-409B-8E5D-DA02B54EF4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83FFE1B6-420A-409B-8E5D-DA02B54EF4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83FFE1B6-420A-409B-8E5D-DA02B54EF4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83FFE1B6-420A-409B-8E5D-DA02B54EF4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F0DDA5B-67AE-4EC3-A91B-8D8038782E95} = {5B561858-56F0-460C-B066-A42D250F4DD6}
+		{83FFE1B6-420A-409B-8E5D-DA02B54EF4DC} = {5B561858-56F0-460C-B066-A42D250F4DD6}
 	EndGlobalSection
 EndGlobal
